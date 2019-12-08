@@ -1,0 +1,45 @@
+{
+  "userlists": [
+    {
+      "firstName": "Mohamed Ikhram khan",
+      "lastName": "Thoulath khan",
+      "dob": "09/06/1991",
+      "address": "Salmiya, Kuwait",
+      "email": "mohamedikhram91@gmail.com",
+      "password": "12345678",
+      "profileImage": "https://becondevs.s3.amazonaws.com/media/members/resized_avatars/034332536132019102_resized.jpeg",
+      "phone": 50396926
+    },
+    {
+      "firstName": "Murali",
+      "lastName": "Vengaiya",
+      "dob": "18/12/1990",
+      "address": "Sharq, Kuwait",
+      "email": "mohamedikhram@gmail.com",
+      "password": "12345678",
+      "profileImage": "https://becondevs.s3.amazonaws.com/media/members/resized_avatars/1575791243474_resized.jpeg",
+      "phone": 50396926
+    },
+    {
+      "firstName": "TestUser",
+      "lastName": "TEST",
+      "dob": "18/07/1990",
+      "address": "Fahaheel, Kuwait",
+      "email": "test@gmail.com",
+      "password": "1234",
+      "profileImage": "https://becondevs.s3.amazonaws.com/media/business/resized_logos/059403030192019102_resized.jpeg",
+      "phone": 50396926
+    },
+    {
+      "firstName": "Mohammed Abdullah",
+      "lastName": "Alwatyan",
+      "dob": "18/07/1990",
+      "address": "Salmiya, Kuwait",
+      "email": "test1234@gmail.com",
+      "password": "1234",
+      "profileImage": "https://becondevs.s3.amazonaws.com/media/members/resized_avatars/Needle_Needs_Shop.jpg",
+      "phone": 50396926
+    }
+  ]
+}
+    

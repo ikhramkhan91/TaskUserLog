@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28314232A12851AC96539255 /* Pods_TaskUserLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0772FDE5E58906029CDF0CC3 /* Pods_TaskUserLog.framework */; };
+		DE1F4B57239BEF9C0030C530 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B56239BEF9C0030C530 /* UserListViewController.swift */; };
+		DE1F4B59239BF2700030C530 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B58239BF2700030C530 /* RegistrationSecondViewController.swift */; };
+		DE1F4B5C239C05D70030C530 /* UserListTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B5B239C05D70030C530 /* UserListTableVIewCell.swift */; };
+		DE1F4B5E239CE0A70030C530 /* UsersList.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1F4B5D239CE0A70030C530 /* UsersList.json */; };
+		DE1F4B62239CE3560030C530 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B61239CE3560030C530 /* UserListModel.swift */; };
+		DE1F4B64239CEA570030C530 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B63239CEA570030C530 /* UserListViewModel.swift */; };
+		DE1F4B66239CFEA10030C530 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B65239CFEA10030C530 /* UIExtensions.swift */; };
+		DE1F4B68239D022F0030C530 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B67239D022F0030C530 /* AppConstants.swift */; };
+		DE1F4B6A239D0E600030C530 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B69239D0E600030C530 /* LoginViewModel.swift */; };
+		DE1F4B6C239D29D80030C530 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F4B6B239D29D80030C530 /* UserProfileViewModel.swift */; };
+		DEBDB76B239A635F0002FE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB76A239A635F0002FE61 /* AppDelegate.swift */; };
+		DEBDB76D239A635F0002FE61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB76C239A635F0002FE61 /* SceneDelegate.swift */; };
+		DEBDB772239A635F0002FE61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBDB770239A635F0002FE61 /* Main.storyboard */; };
+		DEBDB774239A63610002FE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDB773239A63610002FE61 /* Assets.xcassets */; };
+		DEBDB777239A63610002FE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBDB775239A63610002FE61 /* LaunchScreen.storyboard */; };
+		DEBDB782239A63610002FE61 /* TaskUserLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB781239A63610002FE61 /* TaskUserLogTests.swift */; };
+		DEBDB78D239A63610002FE61 /* TaskUserLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB78C239A63610002FE61 /* TaskUserLogUITests.swift */; };
+		DEBDB7B0239BDB730002FE61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB7AF239BDB730002FE61 /* LoginViewController.swift */; };
+		DEBDB7B2239BDB950002FE61 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB7B1239BDB950002FE61 /* RegistrationViewController.swift */; };
+		DEBDB7B4239BDBA60002FE61 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDB7B3239BDBA60002FE61 /* UserProfileViewController.swift */; };
+		DEBDB7B7239BE26F0002FE61 /* titillium-web in Resources */ = {isa = PBXBuildFile; fileRef = DEBDB7B6239BE26F0002FE61 /* titillium-web */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEBDB77E239A63610002FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEBDB75F239A635F0002FE61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBDB766239A635F0002FE61;
+			remoteInfo = TaskUserLog;
+		};
+		DEBDB789239A63610002FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEBDB75F239A635F0002FE61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBDB766239A635F0002FE61;
+			remoteInfo = TaskUserLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0772FDE5E58906029CDF0CC3 /* Pods_TaskUserLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskUserLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E3BD05C517E0DBD10CEC0C /* Pods-TaskUserLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskUserLog.debug.xcconfig"; path = "Target Support Files/Pods-TaskUserLog/Pods-TaskUserLog.debug.xcconfig"; sourceTree = "<group>"; };
+		DDB7DB9D342BA6A0412A3009 /* Pods-TaskUserLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskUserLog.release.xcconfig"; path = "Target Support Files/Pods-TaskUserLog/Pods-TaskUserLog.release.xcconfig"; sourceTree = "<group>"; };
+		DE1F4B56239BEF9C0030C530 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		DE1F4B58239BF2700030C530 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
+		DE1F4B5B239C05D70030C530 /* UserListTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableVIewCell.swift; sourceTree = "<group>"; };
+		DE1F4B5D239CE0A70030C530 /* UsersList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersList.json; sourceTree = "<group>"; };
+		DE1F4B61239CE3560030C530 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		DE1F4B63239CEA570030C530 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		DE1F4B65239CFEA10030C530 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		DE1F4B67239D022F0030C530 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		DE1F4B69239D0E600030C530 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DE1F4B6B239D29D80030C530 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		DEBDB767239A635F0002FE61 /* TaskUserLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskUserLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDB76A239A635F0002FE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEBDB76C239A635F0002FE61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEBDB771239A635F0002FE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEBDB773239A63610002FE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEBDB776239A63610002FE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEBDB778239A63610002FE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDB77D239A63610002FE61 /* TaskUserLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUserLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDB781239A63610002FE61 /* TaskUserLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUserLogTests.swift; sourceTree = "<group>"; };
+		DEBDB783239A63610002FE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDB788239A63610002FE61 /* TaskUserLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUserLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDB78C239A63610002FE61 /* TaskUserLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUserLogUITests.swift; sourceTree = "<group>"; };
+		DEBDB78E239A63610002FE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDB7AF239BDB730002FE61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DEBDB7B1239BDB950002FE61 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		DEBDB7B3239BDBA60002FE61 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		DEBDB7B6239BE26F0002FE61 /* titillium-web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "titillium-web"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEBDB764239A635F0002FE61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28314232A12851AC96539255 /* Pods_TaskUserLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB77A239A63610002FE61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB785239A63610002FE61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CBFBCEB5945222A13F95ACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21E3BD05C517E0DBD10CEC0C /* Pods-TaskUserLog.debug.xcconfig */,
+				DDB7DB9D342BA6A0412A3009 /* Pods-TaskUserLog.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A8F04B072634E430956F10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0772FDE5E58906029CDF0CC3 /* Pods_TaskUserLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE1F4B55239BEF840030C530 /* UserListVC */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B56239BEF9C0030C530 /* UserListViewController.swift */,
+			);
+			path = UserListVC;
+			sourceTree = "<group>";
+		};
+		DE1F4B5A239C05B30030C530 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B5B239C05D70030C530 /* UserListTableVIewCell.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		DE1F4B5F239CE0B80030C530 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B63239CEA570030C530 /* UserListViewModel.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		DE1F4B60239CE12B0030C530 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B61239CE3560030C530 /* UserListModel.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		DEBDB75E239A635F0002FE61 = {
+			isa = PBXGroup;
+			children = (
+				DEBDB769239A635F0002FE61 /* TaskUserLog */,
+				DEBDB780239A63610002FE61 /* TaskUserLogTests */,
+				DEBDB78B239A63610002FE61 /* TaskUserLogUITests */,
+				DEBDB768239A635F0002FE61 /* Products */,
+				5CBFBCEB5945222A13F95ACE /* Pods */,
+				8A8F04B072634E430956F10C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEBDB768239A635F0002FE61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB767239A635F0002FE61 /* TaskUserLog.app */,
+				DEBDB77D239A63610002FE61 /* TaskUserLogTests.xctest */,
+				DEBDB788239A63610002FE61 /* TaskUserLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEBDB769239A635F0002FE61 /* TaskUserLog */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB79E239A656E0002FE61 /* Controllers */,
+				DEBDB79D239A655C0002FE61 /* Models */,
+				DEBDB79C239A64EA0002FE61 /* Views */,
+				DEBDB7A0239A65950002FE61 /* ViewModels */,
+				DEBDB79B239A64C40002FE61 /* Core */,
+				DEBDB79A239A64BA0002FE61 /* Vendors */,
+				DEBDB7AD239A67130002FE61 /* Network */,
+				DEBDB7AE239A671B0002FE61 /* CommonServices */,
+				DEBDB76A239A635F0002FE61 /* AppDelegate.swift */,
+				DEBDB76C239A635F0002FE61 /* SceneDelegate.swift */,
+				DEBDB770239A635F0002FE61 /* Main.storyboard */,
+				DEBDB773239A63610002FE61 /* Assets.xcassets */,
+				DEBDB775239A63610002FE61 /* LaunchScreen.storyboard */,
+				DEBDB778239A63610002FE61 /* Info.plist */,
+			);
+			path = TaskUserLog;
+			sourceTree = "<group>";
+		};
+		DEBDB780239A63610002FE61 /* TaskUserLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB781239A63610002FE61 /* TaskUserLogTests.swift */,
+				DEBDB783239A63610002FE61 /* Info.plist */,
+			);
+			path = TaskUserLogTests;
+			sourceTree = "<group>";
+		};
+		DEBDB78B239A63610002FE61 /* TaskUserLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB78C239A63610002FE61 /* TaskUserLogUITests.swift */,
+				DEBDB78E239A63610002FE61 /* Info.plist */,
+			);
+			path = TaskUserLogUITests;
+			sourceTree = "<group>";
+		};
+		DEBDB79A239A64BA0002FE61 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		DEBDB79B239A64C40002FE61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB79F239A65870002FE61 /* JSONFiles */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DEBDB79C239A64EA0002FE61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7A6239A661F0002FE61 /* Login */,
+				DEBDB7A5239A66120002FE61 /* Registration */,
+				DE1F4B5A239C05B30030C530 /* UserList */,
+				DEBDB7A4239A66000002FE61 /* UserProfile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEBDB79D239A655C0002FE61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7A7239A66380002FE61 /* Login */,
+				DEBDB7A8239A66440002FE61 /* Registration */,
+				DE1F4B60239CE12B0030C530 /* UserList */,
+				DEBDB7A9239A66570002FE61 /* UserProfile */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEBDB79E239A656E0002FE61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7AA239A667F0002FE61 /* LoginVC */,
+				DEBDB7AB239A668A0002FE61 /* RegistrationVC */,
+				DE1F4B55239BEF840030C530 /* UserListVC */,
+				DEBDB7AC239A66960002FE61 /* UserProfileVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DEBDB79F239A65870002FE61 /* JSONFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B5D239CE0A70030C530 /* UsersList.json */,
+			);
+			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		DEBDB7A0239A65950002FE61 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7A1239A65A10002FE61 /* Login */,
+				DEBDB7A2239A65BC0002FE61 /* Registration */,
+				DE1F4B5F239CE0B80030C530 /* UserList */,
+				DEBDB7A3239A65CC0002FE61 /* UserProfile */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DEBDB7A1239A65A10002FE61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B69239D0E600030C530 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DEBDB7A2239A65BC0002FE61 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		DEBDB7A3239A65CC0002FE61 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B6B239D29D80030C530 /* UserProfileViewModel.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		DEBDB7A4239A66000002FE61 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		DEBDB7A5239A66120002FE61 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		DEBDB7A6239A661F0002FE61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DEBDB7A7239A66380002FE61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DEBDB7A8239A66440002FE61 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		DEBDB7A9239A66570002FE61 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		DEBDB7AA239A667F0002FE61 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7AF239BDB730002FE61 /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		DEBDB7AB239A668A0002FE61 /* RegistrationVC */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7B1239BDB950002FE61 /* RegistrationViewController.swift */,
+				DE1F4B58239BF2700030C530 /* RegistrationSecondViewController.swift */,
+			);
+			path = RegistrationVC;
+			sourceTree = "<group>";
+		};
+		DEBDB7AC239A66960002FE61 /* UserProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7B3239BDBA60002FE61 /* UserProfileViewController.swift */,
+			);
+			path = UserProfileVC;
+			sourceTree = "<group>";
+		};
+		DEBDB7AD239A67130002FE61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DEBDB7AE239A671B0002FE61 /* CommonServices */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4B67239D022F0030C530 /* AppConstants.swift */,
+				DE1F4B65239CFEA10030C530 /* UIExtensions.swift */,
+				DEBDB7B5239BE2610002FE61 /* Fonts */,
+			);
+			path = CommonServices;
+			sourceTree = "<group>";
+		};
+		DEBDB7B5239BE2610002FE61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDB7B6239BE26F0002FE61 /* titillium-web */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEBDB766239A635F0002FE61 /* TaskUserLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEBDB791239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLog" */;
+			buildPhases = (
+				B685F67FED0DB9487109077A /* [CP] Check Pods Manifest.lock */,
+				DEBDB763239A635F0002FE61 /* Sources */,
+				DEBDB764239A635F0002FE61 /* Frameworks */,
+				DEBDB765239A635F0002FE61 /* Resources */,
+				6002210E2C849713BAE7BF63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskUserLog;
+			productName = TaskUserLog;
+			productReference = DEBDB767239A635F0002FE61 /* TaskUserLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEBDB77C239A63610002FE61 /* TaskUserLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEBDB794239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLogTests" */;
+			buildPhases = (
+				DEBDB779239A63610002FE61 /* Sources */,
+				DEBDB77A239A63610002FE61 /* Frameworks */,
+				DEBDB77B239A63610002FE61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEBDB77F239A63610002FE61 /* PBXTargetDependency */,
+			);
+			name = TaskUserLogTests;
+			productName = TaskUserLogTests;
+			productReference = DEBDB77D239A63610002FE61 /* TaskUserLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEBDB787239A63610002FE61 /* TaskUserLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEBDB797239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLogUITests" */;
+			buildPhases = (
+				DEBDB784239A63610002FE61 /* Sources */,
+				DEBDB785239A63610002FE61 /* Frameworks */,
+				DEBDB786239A63610002FE61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEBDB78A239A63610002FE61 /* PBXTargetDependency */,
+			);
+			name = TaskUserLogUITests;
+			productName = TaskUserLogUITests;
+			productReference = DEBDB788239A63610002FE61 /* TaskUserLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEBDB75F239A635F0002FE61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = IkhramDev;
+				TargetAttributes = {
+					DEBDB766239A635F0002FE61 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DEBDB77C239A63610002FE61 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DEBDB766239A635F0002FE61;
+					};
+					DEBDB787239A63610002FE61 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DEBDB766239A635F0002FE61;
+					};
+				};
+			};
+			buildConfigurationList = DEBDB762239A635F0002FE61 /* Build configuration list for PBXProject "TaskUserLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEBDB75E239A635F0002FE61;
+			productRefGroup = DEBDB768239A635F0002FE61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEBDB766239A635F0002FE61 /* TaskUserLog */,
+				DEBDB77C239A63610002FE61 /* TaskUserLogTests */,
+				DEBDB787239A63610002FE61 /* TaskUserLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEBDB765239A635F0002FE61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDB777239A63610002FE61 /* LaunchScreen.storyboard in Resources */,
+				DEBDB7B7239BE26F0002FE61 /* titillium-web in Resources */,
+				DEBDB774239A63610002FE61 /* Assets.xcassets in Resources */,
+				DEBDB772239A635F0002FE61 /* Main.storyboard in Resources */,
+				DE1F4B5E239CE0A70030C530 /* UsersList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB77B239A63610002FE61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB786239A63610002FE61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6002210E2C849713BAE7BF63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskUserLog/Pods-TaskUserLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskUserLog/Pods-TaskUserLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskUserLog/Pods-TaskUserLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B685F67FED0DB9487109077A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskUserLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEBDB763239A635F0002FE61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDB7B0239BDB730002FE61 /* LoginViewController.swift in Sources */,
+				DE1F4B59239BF2700030C530 /* RegistrationSecondViewController.swift in Sources */,
+				DEBDB7B4239BDBA60002FE61 /* UserProfileViewController.swift in Sources */,
+				DE1F4B6C239D29D80030C530 /* UserProfileViewModel.swift in Sources */,
+				DE1F4B62239CE3560030C530 /* UserListModel.swift in Sources */,
+				DEBDB76B239A635F0002FE61 /* AppDelegate.swift in Sources */,
+				DE1F4B66239CFEA10030C530 /* UIExtensions.swift in Sources */,
+				DE1F4B5C239C05D70030C530 /* UserListTableVIewCell.swift in Sources */,
+				DE1F4B68239D022F0030C530 /* AppConstants.swift in Sources */,
+				DE1F4B6A239D0E600030C530 /* LoginViewModel.swift in Sources */,
+				DEBDB7B2239BDB950002FE61 /* RegistrationViewController.swift in Sources */,
+				DEBDB76D239A635F0002FE61 /* SceneDelegate.swift in Sources */,
+				DE1F4B57239BEF9C0030C530 /* UserListViewController.swift in Sources */,
+				DE1F4B64239CEA570030C530 /* UserListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB779239A63610002FE61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDB782239A63610002FE61 /* TaskUserLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDB784239A63610002FE61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDB78D239A63610002FE61 /* TaskUserLogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEBDB77F239A63610002FE61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBDB766239A635F0002FE61 /* TaskUserLog */;
+			targetProxy = DEBDB77E239A63610002FE61 /* PBXContainerItemProxy */;
+		};
+		DEBDB78A239A63610002FE61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBDB766239A635F0002FE61 /* TaskUserLog */;
+			targetProxy = DEBDB789239A63610002FE61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEBDB770239A635F0002FE61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEBDB771239A635F0002FE61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEBDB775239A63610002FE61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEBDB776239A63610002FE61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEBDB78F239A63610002FE61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEBDB790239A63610002FE61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEBDB792239A63610002FE61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E3BD05C517E0DBD10CEC0C /* Pods-TaskUserLog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66F4R5FJ7D;
+				INFOPLIST_FILE = TaskUserLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DEBDB793239A63610002FE61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB7DB9D342BA6A0412A3009 /* Pods-TaskUserLog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66F4R5FJ7D;
+				INFOPLIST_FILE = TaskUserLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DEBDB795239A63610002FE61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskUserLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskUserLog.app/TaskUserLog";
+			};
+			name = Debug;
+		};
+		DEBDB796239A63610002FE61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskUserLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskUserLog.app/TaskUserLog";
+			};
+			name = Release;
+		};
+		DEBDB798239A63610002FE61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskUserLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskUserLog;
+			};
+			name = Debug;
+		};
+		DEBDB799239A63610002FE61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaskUserLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IkhramDev.TaskUserLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaskUserLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEBDB762239A635F0002FE61 /* Build configuration list for PBXProject "TaskUserLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDB78F239A63610002FE61 /* Debug */,
+				DEBDB790239A63610002FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEBDB791239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDB792239A63610002FE61 /* Debug */,
+				DEBDB793239A63610002FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEBDB794239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDB795239A63610002FE61 /* Debug */,
+				DEBDB796239A63610002FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEBDB797239A63610002FE61 /* Build configuration list for PBXNativeTarget "TaskUserLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDB798239A63610002FE61 /* Debug */,
+				DEBDB799239A63610002FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEBDB75F239A635F0002FE61 /* Project object */;
+}
