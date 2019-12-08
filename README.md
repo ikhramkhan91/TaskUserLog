@@ -9,7 +9,7 @@ This project have the following screens
 3. UserList Screen
 4. UserProfile Screen
 
-Login with any one of the following credentials and you will get to see the list of registered users. And by following it will able to view the details of user. JSON data file is used for users list and designed with MVVM architecture.
+Login with the credentials and will get to see the list of registered users. By selecting a particular cell of user you will be able to view the complete details of the user. JSON data file is used for users list and designed with MVVM architecture.
 
 
 STEPS TO OPEN THE PROJECT:
