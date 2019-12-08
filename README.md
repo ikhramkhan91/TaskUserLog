@@ -35,16 +35,16 @@ Pods used
 -------------------------------------------
 
 Each Module Will have its own folder. eg -
-Login,
-Registration,
-UserList,
-UserProfile,
-SupportingFiles folder,
-Frameworks (Folder for 3rd paty code which does not have Cocoapods),
-AppDelegate.swift,
-Main.storyboard,
-LaunchScreen.storyboard,
-Info.plist.
+* Login,
+* Registration,
+* UserList,
+* UserProfile,
+* SupportingFiles folder,
+* Frameworks (Folder for 3rd paty code which does not have Cocoapods),
+* AppDelegate.swift,
+* Main.storyboard,
+* LaunchScreen.storyboard,
+* Info.plist.
 
 ***Attached the screenshots in project folder***
 
