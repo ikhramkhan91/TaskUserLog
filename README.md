@@ -44,7 +44,7 @@ Frameworks (Folder for 3rd paty code which does not have Cocoapods),
 AppDelegate.swift,
 Main.storyboard,
 LaunchScreen.storyboard,
-Info.plist,
+Info.plist.
 
 ***Attached the screenshots in project folder***
 
